@@ -12,6 +12,7 @@
 	General
 		Tables
 	Miscellaneous
+		Input
 	Navigation Bar
 	Header
 	Content
@@ -23,6 +24,12 @@
 
 
 /* ----- ----- ----- General ----- ----- ----- */
+* {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
 body {
 	padding-top: 50px;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -34,6 +41,9 @@ hr {
 	border-color: #ccc;
 }
 /* ----- ----- ----- Tables ----- ----- ----- */
+#company-info th {
+	text-align: right;
+}
 
 
 
@@ -63,12 +73,26 @@ iframe {
 	padding-bottom: 56.25%;
 	margin-bottom: 10px;
 }
+/* ----- ----- ----- Inputs ----- ----- ----- */
 
 
 
 /* ----- ----- ----- Navigation Bar ----- ----- ----- */
 .navbar img {
 	height: 100%;
+}
+.navbar-default {
+	background-color: rgba(156,255,86,0.9);
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	background-color: rgba(255,255,255,0.25);
+}
+.navbar-fixed-top {
+	border-width: 0;
+}
+.navbar-brand {
+	padding: 7.5px 15px;
 }
 
 
@@ -108,6 +132,9 @@ iframe {
 	height: auto;
 	background-color: #f8f8f8;
 	border-top: 1px solid #e7e7e7;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+#property-info, #company-info, #footer-copyright {
+	font-size: 0.75em;
 }
