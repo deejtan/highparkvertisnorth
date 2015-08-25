@@ -13,7 +13,7 @@
 	  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   <!-- Misc Imports -->
-  	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <!-- Scripts -->
   	<!-- local >
@@ -44,29 +44,17 @@
 	      <ul class="nav navbar-nav">
 	        <li><a href="index.html">Home</a></li>
 	        <li><a href="project-details.html">Project Details</a></li>
-	        <li class="dropdown">
-	          <a href="amenities.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Amenities <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">One more separated link</a></li>
-	          </ul>
-	        </li>
+	        <li><a href="amenities.html">Amenities</a></li>
 	        <li><a href="location.html">Location</a></li>
-	        <li><a href="seller-accreditation.html">Seller Accreditation</a></li>
 	        <li class="active"><a href="contact-us.html">Contact Us <span class="sr-only">(current)</span></a></li>
 	      </ul>
 	      <form class="navbar-form navbar-right" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn btn-default">
-	        	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-	        </button>
+	        <div class="input-group">
+			      <input type="text" class="form-control" id="navbar-search" placeholder="Search">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+			      </span>
+			    </div>
 	      </form>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
@@ -130,7 +118,62 @@
 	<!-- start footer -->
 	<footer class="footer">
     <div class="container">
-      <p class="text-muted">Place footer content here.</p>
+      <div class="row">
+      	<div class="col-md-offset-2 col-md-4" id="property-info">
+      		<div class="text-center">
+      			<img src="images/highpark-logo.png" alt="High Park Vertis North Logo" width="auto" height="100px">
+      		</div>
+		      <div class="caption">
+		        <h5 class="text-center">High Park Vertis North</h5>
+		        <p class="text-center"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Bagong Pag-asa, Diliman, Quezon City, Metro Manila</p>
+			      <div class="social text-center">
+			        <ul>
+			        	<li><a href="" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+				        <li><a href="" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+				        <li><a href="" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+			        </ul>
+			      </div>
+		      </div>
+      	</div>
+      	<div class="col-md-4" id="company-info">
+      		<div class="text-center">
+      			<a href="http://www.primephilippines.com" title="PRIME Philippines Website" target="_blank"><img src="images/primelogo-small.png" alt="PRIME Philippines"></a>
+      		</div>
+      		<div class="caption">
+      			<h5 class="text-center">PRIME Philippines - Accredited Seller</h5>
+      			<table class="table-condensed">
+      				<tbody>
+								<tr>
+								  <th style="width:25%">Address</th>
+								  <td>Unit 215 Pacific Century Tower South Triangle, Quezon Avenue, Quezon City 1103 Philippines.</td>
+								</tr>
+								<tr>
+								  <th>Landline</th>
+								  <td>+632 442 6362</td>
+								</tr>
+								<tr>
+								  <th>Mobile</th>
+								  <td>+63917 555 8222</td>
+								</tr>
+								<tr>
+								  <th>Email</th>
+								  <td>salesnetwork@primephilippines.com</td>
+								</tr>
+								<tr>
+								  <th>Website</th>
+								  <td><a href="http://www.primephilippines.com" target="_blank">PRIME Philippines</a></td>
+								</tr>
+							</tbody>
+						</table>
+      		</div>
+      	</div>
+      </div>
+
+			<hr>
+
+      <div class="row" id="footer-copyright">
+      	<p class="text-center">Copyright &copy; 2015 High Park Vertis North</p>
+      </div>
     </div>
   </footer>
 	<!-- end footer -->

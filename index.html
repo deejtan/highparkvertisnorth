@@ -13,7 +13,7 @@
 	  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   <!-- Misc Imports -->
-  	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <!-- Scripts -->
   	<!-- local >
@@ -44,29 +44,17 @@
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
 	        <li><a href="project-details.html">Project Details</a></li>
-	        <li class="dropdown">
-	          <a href="amenities.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Amenities <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">One more separated link</a></li>
-	          </ul>
-	        </li>
+	        <li><a href="amenities.html">Amenities</a></li>
 	        <li><a href="location.html">Location</a></li>
-	        <li><a href="seller-accreditation.html">Seller Accreditation</a></li>
 	        <li><a href="contact-us.html">Contact Us</a></li>
 	      </ul>
 	      <form class="navbar-form navbar-right" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn btn-default">
-	        	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-	        </button>
+	        <div class="input-group">
+			      <input type="text" class="form-control" id="navbar-search" placeholder="Search">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+			      </span>
+			    </div>
 	      </form>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
@@ -95,7 +83,7 @@
 	<div class="jumbotron header">
 	  <div class="container">
 	    <h1>High Park Vertis North</h1>
-	    <p>Something something oh yeah</p>
+	    <p>A new central business and lifestyle district </p>
 	  </div>
   </div>
 	<!-- end header -->
@@ -120,7 +108,7 @@
 
 			<div class="row">
 				<div class="col-md-6">
-					<img src="images/img-4x3.png" class="img-responsive img-thumbnail">
+					<p class="text-center"><img src="images/img-16x9.png" class="img-responsive img-thumbnail"></p>
 				</div>
 				<div class="col-md-6">
 					<h1>An Unsurpassed Legacy</h1>
@@ -132,12 +120,12 @@
 
 			<div class="row">
 				<div class="col-md-6">
+					<p class="text-center"><img src="images/img-16x9.png" class="img-responsive img-thumbnail"></p>
+				</div>
+				<div class="col-md-6">
 					<h1>Quezon City, the Emerging Enterprise Capital of the North</h1>
 					<p class="text-justify">Once the nation's capital, today an emerging Asian Hub thriving with over 3 million people. At least 60,000 businesses and more than 700,000 households call Metro Manila's largest city home. A 16,000-hectare cultural, lifestyle, and commercial hotspot, Quezon City is consistently among the highest earning and most progressive cities in the country.</p>
 					<p class="text-justify">Through the years, Ayala Land has aligned Quezon City's past and present with the future&#8212;propelling vast resources and a fiercely entrepreneurial spirit toward building the city's newest lifestyle and enterprise capital.</p>
-				</div>
-				<div class="col-md-6">
-					<img src="images/img-4x3.png" class="img-responsive img-thumbnail">
 				</div>
 			</div>
 
@@ -145,7 +133,7 @@
 
 			<div class="row">
 				<div class="col-md-6">
-					<img src="images/img-4x3.png" class="img-responsive img-thumbnail">
+					<p class="text-center"><img src="images/img-16x9.png" class="img-responsive img-thumbnail"></p>
 				</div>
 				<div class="col-md-6">
 					<h1>A Tradition of Excellence in Quezon City</h1>
@@ -158,12 +146,12 @@
 
 			<div class="row">
 				<div class="col-md-6">
+					<p class="text-center"><img src="images/img-16x9.png" class="img-responsive img-thumbnail"></p>
+				</div>
+				<div class="col-md-6">
 					<h1>Ingenuity Finds a New Home</h1>
 					<p class="text-justify">Taking Quezon City to new heights, Vertis North rises as the inspiring Central Business District. The North Triangle property on which this destination stands spans 46 hectares of prime land. A location of unparalleled strategic importance bound by EDSA, Quezon Avenue, Agham Road, North Avenue, and Mindanao Avenue. Masterplanned by Ayala Land, Vertis North is the nucleus of a uniquely entrepreneurial city.</p>
 					<p class="text-justify">An enterprising city. A dynamic engine for growth. At Vertis North, all roads lead to progress.</p>
-				</div>
-				<div class="col-md-6">
-					<img src="images/img-4x3.png" class="img-responsive img-thumbnail">
 				</div>
 			</div>
 
@@ -172,18 +160,71 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="text-center">Latest News</h1>
-					<p class="text-justify">1.091293 years since sing strim.i walk through the empty streets trying to think of something else but my path always leads to the stream. i stare at the screen for hours and try to summon the lord. i watch other asian girls streaming but it is no good. i flame dendi in his channel and try to resist the nazi mods but it is all meaningless. the end is near.i then usually watch some old sing vods and cry myself to sleep.</p>
 				</div>
+				<div class="col-md-4">
+			    <div class="thumbnail">
+			      <img src="images/img-4x3.png" class="img-responsive">
+			      <div class="caption">
+			        <h3>News Item 1</h3>
+			        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			        <p class="text-right"><a href="#" class="btn btn-default" role="button"><i class="fa fa-file-text"></i>&nbsp;&nbsp;&nbsp;Full article</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-4">
+			    <div class="thumbnail">
+			      <img src="images/img-4x3.png" class="img-responsive">
+			      <div class="caption">
+			        <h3>News Item 2</h3>
+			        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			        <p class="text-right"><a href="#" class="btn btn-default" role="button"><i class="fa fa-file-text"></i>&nbsp;&nbsp;&nbsp;Full article</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-4">
+			    <div class="thumbnail">
+			      <img src="images/img-4x3.png" class="img-responsive">
+			      <div class="caption">
+			        <h3>News Item 3</h3>
+			        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			        <p class="text-right"><a href="#" class="btn btn-default" role="button"><i class="fa fa-file-text"></i>&nbsp;&nbsp;&nbsp;Full article</a></p>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 
 			<hr>
 
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="text-center">We're Hiring</h1>
-					<p class="text-justify">1.091293 years since sing strim.i walk through the empty streets trying to think of something else but my path always leads to the stream. i stare at the screen for hours and try to summon the lord. i watch other asian girls streaming but it is no good. i flame dendi in his channel and try to resist the nazi mods but it is all meaningless. the end is near.i then usually watch some old sing vods and cry myself to sleep.</p>
-					<p class="text-justify">1.091293 years since sing strim.i walk through the empty streets trying to think of something else but my path always leads to the stream. i stare at the screen for hours and try to summon the lord. i watch other asian girls streaming but it is no good. i flame dendi in his channel and try to resist the nazi mods but it is all meaningless. the end is near.i then usually watch some old sing vods and cry myself to sleep.</p>
-					<p class="text-justify">1.091293 years since sing strim.i walk through the empty streets trying to think of something else but my path always leads to the stream. i stare at the screen for hours and try to summon the lord. i watch other asian girls streaming but it is no good. i flame dendi in his channel and try to resist the nazi mods but it is all meaningless. the end is near.i then usually watch some old sing vods and cry myself to sleep.</p>
+					<h1 class="text-center">We Are Hiring!</h1>
+					<form class="row">
+					  <div class="col-md-6">
+						  <div class="form-group">
+						    <label for="exampleInputName1">Name</label>
+						    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputNumber1">Contact Number</label>
+						    <input type="text" class="form-control" id="exampleInputNumber1" placeholder="Number">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputAddress1">Address</label>
+						    <input type="text" class="form-control" id="exampleInputAddress1" placeholder="Address (Optional)">
+						  </div>
+						</div>
+						<div class="col-md-6">
+						  <div class="form-group">
+						  	<label for="exampleInputMessage1">Message</label>
+						  	<textarea class="form-control" id="exampleInputMessage1" placeholder="Message" rows="5"></textarea>
+						  </div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			
@@ -195,37 +236,20 @@
 	<footer class="footer">
     <div class="container">
       <div class="row">
-      	<div class="col-md-2">
-      		<h4>About High Park</h4>
-      		<ul class="list-unstyled">
-      			<li><a href="">Some</a></li>
-      			<li><a href="">Links</a></li>
-      			<li><a href="">Here</a></li>
-      		</ul>
-      	</div>
-      	<div class="col-md-2">
-      		<h4>Some other stuff</h4>
-      		<ul class="list-unstyled">
-      			<li><a href="">Some</a></li>
-      			<li><a href="">Links</a></li>
-      			<li><a href="">Here</a></li>
-      		</ul>
-      	</div>
-      	<div class="col-md-2">
-      		<h4>EVEN MORE STUFF</h4>
-      		<ul class="list-unstyled">
-      			<li><a href="">Some</a></li>
-      			<li><a href="">Links</a></li>
-      			<li><a href="">Here</a></li>
-      		</ul>
-      	</div>
-      	<div class="col-md-2" id="property-info">
+      	<div class="col-md-offset-2 col-md-4" id="property-info">
       		<div class="text-center">
       			<img src="images/highpark-logo.png" alt="High Park Vertis North Logo" width="auto" height="100px">
       		</div>
 		      <div class="caption">
 		        <h5 class="text-center">High Park Vertis North</h5>
-		        <p class="text-center">Ayy lmao</p>
+		        <p class="text-center"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Bagong Pag-asa, Diliman, Quezon City, Metro Manila</p>
+			      <div class="social text-center">
+			        <ul>
+			        	<li><a href="" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+				        <li><a href="" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+				        <li><a href="" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+			        </ul>
+			      </div>
 		      </div>
       	</div>
       	<div class="col-md-4" id="company-info">
@@ -261,9 +285,11 @@
       		</div>
       	</div>
       </div>
+
+			<hr>
+
       <div class="row" id="footer-copyright">
-      	<p class="text-center">Copyright &copy; 2015 High Park Vertis North<br/>
-      	Powered by FRIENDSHIP</p>
+      	<p class="text-center">Copyright &copy; 2015 High Park Vertis North</p>
       </div>
     </div>
   </footer>

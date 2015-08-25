@@ -10,9 +10,12 @@
 /* Table of Contents
 	
 	General
-		Tables
 	Miscellaneous
-		Input
+	Tables
+	Input
+	Links
+	Buttons
+	Tabs
 	Navigation Bar
 	Header
 	Content
@@ -34,15 +37,21 @@ body {
 	padding-top: 50px;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+}
 h1 {
 	font-weight: 700;
 }
 hr {
 	border-color: #ccc;
-}
-/* ----- ----- ----- Tables ----- ----- ----- */
-#company-info th {
-	text-align: right;
 }
 
 
@@ -73,7 +82,171 @@ iframe {
 	padding-bottom: 56.25%;
 	margin-bottom: 10px;
 }
-/* ----- ----- ----- Inputs ----- ----- ----- */
+
+
+
+/* ----- ----- ----- Tables ----- ----- ----- */
+#company-info th {
+	text-align: right;
+}
+
+
+
+/* ----- ----- ----- Links ----- ----- ----- */
+
+/* Social Media */
+.social {
+    margin: 0;
+    padding: 0;
+}
+.social ul {
+    margin: 0;
+    list-style: none;
+    padding: 5px;
+}
+.social ul li {
+    margin: 0 1px;
+    display: inline;
+}
+.social i {
+    width: 24px;
+    height: 22px;
+    color: #fff;
+    background-color: #909AA0;
+    text-align: center;
+    padding-top: 6px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.social i:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.social .fa-facebook,
+.social .fa-facebook:link,
+.social .fa-facebook:visited {
+	background-color: #3b5998;
+}
+.social .fa-facebook:hover,
+.social .fa-facebook:active,
+.social .fa-facebook:focus {
+	background-color: #4E77C9;
+}
+.social .fa-twitter,
+.social .fa-twitter:link,
+.social .fa-twitter:visited {
+	background-color: #00aced;
+}
+.social .fa-twitter:hover,
+.social .fa-twitter:active,
+.social .fa-twitter:focus {
+	background-color: #1EC3FF;
+}
+.social .fa-google-plus,
+.social .fa-google-plus:link,
+.social .fa-google-plus:visited {
+	background-color: #dd4b39;
+}
+.social .fa-google-plus:hover,
+.social .fa-google-plus:active,
+.social .fa-google-plus:focus {
+	background-color: #FF6251;
+}
+.social .fa-linkedin,
+.social .fa-linkedin:link,
+.social .fa-linkedin:visited {
+	background-color: #007bb6;
+}
+.social .fa-linkedin:hover,
+.social .fa-linkedin:active,
+.social .fa-linkedin:focus {
+	background-color: #009EE8;
+}
+
+
+
+/* ----- ----- ----- Buttons ----- ----- ----- */
+
+/* Default */
+.btn-default {
+	color: #fff;
+	background-color: #E19202;
+	border-color: #C67E01;
+}
+.btn-default:focus,
+.btn-default.focus {
+	color: #fff;
+	background-color: #FFA202;
+	border-color: #C67E01;
+}
+.btn-default:hover {
+	color: #fff;
+	background-color: #FFA202;
+	border-color: #E19202;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+	color: #fff;
+	background-color: #FFA202;
+	border-color: #C67E01;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+	color: #fff;
+	background-color: #E19202;
+	border-color: #961517;
+}
+
+/* Primary */
+.btn-primary {
+	background-color: #B11819;
+	border-color: #961517;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+	background-color: #E21F26;
+	border-color: #961517;
+}
+.btn-primary:hover {
+	background-color: #E21F26;
+	border-color: #B11819;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+	background-color: #E21F26;
+	border-color: #B11819;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+	background-color: #B11819;
+	border-color: #961517;
+}
+
+
+
+/* ----- ----- ----- Tabs ----- ----- ----- */
+
+.nav-tabs {
+	margin-bottom: 24px;
+}
 
 
 
@@ -82,17 +255,66 @@ iframe {
 	height: 100%;
 }
 .navbar-default {
-	background-color: rgba(156,255,86,0.9);
+	background-color: rgba(156,255,86,0.95);
 }
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-	background-color: rgba(255,255,255,0.25);
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #75BF41;
+    color: #fff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #75BF41;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #75BF41;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #75BF41;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:active .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+	max-height: 100vh;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #75BF41;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: #75BF41;
+    color: #fff;
+}
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    	color: #fff;
+		background-color: #75BF41;
+	}
 }
 .navbar-fixed-top {
 	border-width: 0;
+	-webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.25);
 }
 .navbar-brand {
 	padding: 7.5px 15px;
+}
+.navbar-default .form-control#navbar-search {
+	border: 1px solid #C67E01;
 }
 
 
